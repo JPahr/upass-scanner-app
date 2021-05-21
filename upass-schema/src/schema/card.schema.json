@@ -6,35 +6,71 @@
     "type": "object",
     "properties": {
         "id": {
-            "type": "string",
             "title": "Card identifier",
-            "description": "A unique identifier for upass system"
+            "description": "A unique identifier for upass system",
+            "type": "string"
         },
-        "passType": {
-            "type": "string",
-            "title": "Card type",
-            "description": "A unique pass type for upass system",
-            "enum": [
-                "Stored Value",
-                "Gift Vouchers",
-                "Discount"
-            ]
+        "os": {
+            "title": "Pass os",
+            "description": "Customer device os",
+            "enum": ["android", "ios"]
         },
         "createdAt": {
-            "type": "string",
-            "format": "date-time",
             "title": "Card creation date",
-            "description": "Date when card was created"
+            "description": "Date when card was created",
+            "type": "string",
+            "format": "date-time"
         },
         "updatedAt": {
-            "type": "string",
-            "format": "date-time",
             "title": "Card update date",
-            "description": "Date when card was updated"
+            "description": "Date when card was updated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "logoAlt": {
+            "title": "Logo alt",
+            "description": "Logo image html alt",
+            "type": "string"
         },
         "holder": {
+            "title": "Card holder information",
+            "description": " Information about user personal data, user device data and etc.",
             "type": "object",
-            "$ref": "#/cardHolder/"
+            "$ref": "#/card-holder/"
+        },
+        "balance": {
+            "title": "Balance",
+            "description": "Current customer's card balance",
+            "type": "integer"
+        },
+        "cashbackValue": {
+            "title": "Cashback value",
+            "description": "Current customer's cashback value",
+            "type": "integer"
+        },
+        "passCampaign": {
+            "title": "Pass campaign",
+            "description": "Campaign to which pass has been associated",
+            "type": "string"
+        },
+        "template": {
+           "title": "Template",
+           "description": "Basic card template, which contains basic information for card creation"
+        },
+        "assets": {
+            "title": "Assets list",
+            "description": "List of all assets which our cards uses ",
+            "type": "array"
+        },
+        "barcodeType": {
+            "title": "Barcode type",
+            "description": "List of standard barcode types",
+            "enum": ["qr","barcode"]
+        }, 
+        "details":{
+            "title": "Details",
+            "description": "Information on backside of pass, contains company mail, phone, address etc.",
+            "type":"array"
         }
     }
 }
