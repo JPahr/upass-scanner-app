@@ -1,8 +1,9 @@
 {
-    "$id": "http://upass.com.ua/main/card-holder.json",
+    "$id": "http://upass.com.ua/schema/card-holder.json",
     "$schema": "http://json-schema.org/draft-07/schema",
     "description": "A representation of a customer with all device data",
     "type": "object",
+    "required": ["firstName", "lastName", "birthday", "phone"],
     "properties": {
         "firstName": {
             "title": "User first name",
@@ -26,7 +27,7 @@
             "format": "date"
         },
         "phone": {
-            "title": "User email",
+            "title": "User phone",
             "description": "Represents user phone",
             "type": "string"
         },
@@ -47,13 +48,13 @@
                         "android", 
                         "ios"
                     ]
-                },
-                "deviceToken": {
-                    "title": "User device token",
-                    "description": "Represents user device token",
-                    "type": "string"
                 }
             }
+        },
+        "cards": {
+            "title": "Customer cards list",
+            "description": "",
+            "type": "array"
         }
     }
 }
