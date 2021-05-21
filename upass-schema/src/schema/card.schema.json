@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://upass.com.ua/schema/card",
+    "title": "Card",
+    "description": "A representation of upass customer card",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "title": "Card identifier",
+            "description": "A unique identifier for upass system"
+        },
+        "passType": {
+            "type": "string",
+            "title": "Card type",
+            "description": "A unique pass type for upass system",
+            "enum": [
+                "Stored Value",
+                "Gift Vouchers",
+                "Discount"
+            ]
+        },
+        "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Card creation date",
+            "description": "Date when card was created"
+        },
+        "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Card update date",
+            "description": "Date when card was updated"
+        },
+        "holder": {
+            "type": "object",
+            "$ref": "#/cardHolder/"
+        }
+    }
+}

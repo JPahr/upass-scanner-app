@@ -1,0 +1,14 @@
+{
+  "name": "upass-schema",
+  "version": "1.0.0",
+  "description": "Npm module for single data entry point",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json-schema"
+  ],
+  "author": "Ivan Parkhomenko",
+  "license": "ISC"
+}

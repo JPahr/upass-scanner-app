@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"json.schemas": [
+			{
+				"fileMatch": [
+					"/*.schema.json"
+				],
+				"url": "./upass-schema/src/upass.schema.json"
+			}
+		]
+	}
+}
