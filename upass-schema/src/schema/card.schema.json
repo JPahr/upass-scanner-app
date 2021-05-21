@@ -11,7 +11,7 @@
             "type": "string"
         },
         "os": {
-            "title": "Pass os",
+            "title": "os",
             "description": "Customer device os",
             "enum": ["android", "ios"]
         },
@@ -22,19 +22,19 @@
             "format": "date-time"
         },
         "updatedAt": {
-            "title": "Card update date",
+            "title": "Card last update date",
             "description": "Date when card was updated",
             "type": "string",
             "format": "date-time"
         },
         "logoAlt": {
             "title": "Logo alt",
-            "description": "Logo image html alt",
+            "description": "Card logo image html alt",
             "type": "string"
         },
         "holder": {
             "title": "Card holder information",
-            "description": " Information about user personal data, user device data and etc.",
+            "description": "Information about user personal data, user device data and etc.",
             "type": "object",
             "$ref": "#/card-holder/"
         },
@@ -50,12 +50,12 @@
         },
         "passCampaign": {
             "title": "Pass campaign",
-            "description": "Campaign to which pass has been associated",
+            "description": "Campaign detail information to which pass has been associated",
             "type": "string"
         },
         "template": {
            "title": "Template",
-           "description": "Basic card template, which contains basic information for card creation"
+           "description": "Basic card template, which contains information for card creation"
         },
         "assets": {
             "title": "Assets list",

@@ -6,44 +6,44 @@
     "required": ["firstName", "lastName", "birthday", "phone"],
     "properties": {
         "firstName": {
-            "title": "User first name",
-            "description": "Represents user fist name",
+            "title": "First name",
+            "description": "Customer first name",
             "type": "string"
         },
         "lastName": {
-            "title": "User last name",
-            "description": "Represents user last name",
+            "title": "Last name",
+            "description": "Customer last name",
             "type": "string"
         },
         "age": {
-            "title": "User age",
-            "description": "Represents user age",
+            "title": "Age",
+            "description": "Customer age, calculates by system, based on birthday date",
             "type": "integer"
         },
         "birthday":{
-            "title": "User birthday date",
-            "description": "Represents birthday day",
+            "title": "Birthday",
+            "description": "Customer birthday date",
             "type": "string",
             "format": "date"
         },
         "phone": {
-            "title": "User phone",
-            "description": "Represents user phone",
+            "title": "Phone",
+            "description": "Customer real phone number",
             "type": "string"
         },
         "email": {
-            "title": "User email",
-            "description": "Represents user email",
+            "title": "Email",
+            "description": "Customer email for contact",
             "type": "string"
         },
         "device": {
-            "title": "User device",
-            "description": "Represents info about user device",
+            "title": "Device",
+            "description": "Contains all technical information about customer device",
             "type": "object",
             "properties": {
                 "os": {
-                    "title": "User device os",
-                    "description": "Represents user device os",
+                    "title": "os",
+                    "description": "OS which customer is use",
                     "enum": [
                         "android", 
                         "ios"
@@ -52,8 +52,8 @@
             }
         },
         "cards": {
-            "title": "Customer cards list",
-            "description": "",
+            "title": "Cards",
+            "description": "Customer cards list",
             "type": "array"
         }
     }
