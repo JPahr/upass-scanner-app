@@ -1,60 +1,10 @@
 {
-    "$id": "http://upass.com.ua/schema/card-holder.json",
     "$schema": "http://json-schema.org/draft-07/schema",
-    "description": "A representation of a customer with all device data",
+    "$id": "http://upass.com.ua/schema/card-holder.json",
+    "description": "Card holder schema which contains prepared data for card creation",
     "type": "object",
-    "required": ["firstName", "lastName", "birthday", "phone"],
+    "required": [],
     "properties": {
-        "firstName": {
-            "title": "First name",
-            "description": "Customer first name",
-            "type": "string"
-        },
-        "lastName": {
-            "title": "Last name",
-            "description": "Customer last name",
-            "type": "string"
-        },
-        "age": {
-            "title": "Age",
-            "description": "Customer age, calculates by system, based on birthday date",
-            "type": "integer"
-        },
-        "birthday":{
-            "title": "Birthday",
-            "description": "Customer birthday date",
-            "type": "string",
-            "format": "date"
-        },
-        "phone": {
-            "title": "Phone",
-            "description": "Customer real phone number",
-            "type": "string"
-        },
-        "email": {
-            "title": "Email",
-            "description": "Customer email for contact",
-            "type": "string"
-        },
-        "device": {
-            "title": "Device",
-            "description": "Contains all technical information about customer device",
-            "type": "object",
-            "properties": {
-                "os": {
-                    "title": "os",
-                    "description": "OS which customer is use",
-                    "enum": [
-                        "android", 
-                        "ios"
-                    ]
-                }
-            }
-        },
-        "cards": {
-            "title": "Cards",
-            "description": "Customer cards list",
-            "type": "array"
-        }
+        
     }
 }

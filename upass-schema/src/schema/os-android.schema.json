@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://upass.com.ua/schema/os-android",
+    "title": "Os android schema",
+    "description": "This is a schema which contains data about customer's android os data (os version, device name, device token)",
+    "type": "object",
+    "properties": {
+        "version": {
+            "title": "Version",
+            "description": "Describes what version of android os customer uses",
+            "type": "string"
+        },
+        "sdk": {
+            "title": "Sdk",
+            "description": "Displays what version of sdk customer uses"
+        },
+        "nfc": {
+            "title": "Nfc",
+            "description": "Contains information about nfc support on customer device",
+            "type": "boolean"
+        }
+    }
+}

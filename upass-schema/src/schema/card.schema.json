@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://upass.com.ua/schema/card",
-    "title": "Card",
-    "description": "A representation of upass customer card",
+    "title": "Card schema",
+    "description": "A detailed data schema which contains information for card creating, customer data, customer device data",
     "type": "object",
     "properties": {
         "id": {

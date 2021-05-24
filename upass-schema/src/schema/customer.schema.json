@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://upass.com.ua/schema/customer",
+    "title": "Customer schema",
+    "description": "This is a schema which contains information about customer: first name, phone, birthday, device data",
+    "properties": {
+        "firstName": {
+            "title": "First name",
+            "description": "Customer first name",
+            "type": "string"
+        },
+        "lastName": {
+            "title": "Last name",
+            "description": "Customer last name",
+            "type": "string"
+        },
+        "age": {
+            "title": "Age",
+            "description": "Customer age, calculates by system, based on birthday date",
+            "type": "integer"
+        },
+        "birthday":{
+            "title": "Birthday",
+            "description": "Customer birthday date",
+            "type": "string",
+            "format": "date"
+        },
+        "phone": {
+            "title": "Phone",
+            "description": "Customer phone number with which user restores his pin",
+            "type": "string"
+        },
+        "email": {
+            "title": "Email",
+            "description": "Customer email, used for email notifications and special offers",
+            "type": "string"
+        },
+        "device": {
+            "title": "Device",
+            "description": "Contains all technical information about customer device",
+            "type": "object",
+            "properties": {
+                "os": {
+                    "title": "os",
+                    "description": "OS which customer is use",
+                    "enum": [
+                        "android", 
+                        "ios"
+                    ]
+                }
+            }
+        },
+        "cards": {
+            "title": "Cards",
+            "description": "Customer cards list",
+            "type": "array"
+        }
+    }
+}
