@@ -5,6 +5,11 @@
     "description": "This is a schema which contains data about customer's android os data (os version, device name, device token)",
     "type": "object",
     "properties": {
+        "id": {
+            "title": "Id",
+            "description": "Unique device identifier",
+            "type": "string"
+        },
         "version": {
             "title": "Version",
             "description": "Describes what version of android os customer uses",
