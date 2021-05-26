@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Upass spacing system schema",
+    "description": "",
+    "spacing": {
+        "xxxs": {
+            "value": "4",
+            "type": "size",
+            "group": "size"
+        },
+        "xxs": {
+            "value": "8",
+            "type": "size",
+            "group": "size"
+        },
+        "xs": {
+            "value": "12",
+            "type": "size",
+            "group": "size"
+        },
+        "s": {
+            "value": "16",
+            "type": "size",
+            "group": "size"
+        },
+        "m": {
+            "value": "24",
+            "type": "size",
+            "group": "size"
+        },
+        "l": {
+            "value": "32",
+            "type": "size",
+            "group": "size"
+        },
+        "xl": {
+            "value": "48",
+            "type": "size",
+            "group": "size"
+        },
+        "xxl": {
+            "value": "72",
+            "type": "size",
+            "group": "size"
+        },
+        "xxxl": {
+            "value": "96",
+            "type": "size",
+            "group": "size"
+        },
+        "xxxxl": {
+            "value": "120",
+            "type": "size",
+            "group": "size"
+        }
+    }
+}
