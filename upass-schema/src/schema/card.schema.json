@@ -64,7 +64,7 @@
         },
         "barcodeType": {
             "title": "Barcode type",
-            "description": "List of standard barcode types",
+            "description": "",
             "enum": ["qr","barcode"]
         }, 
         "details":{
