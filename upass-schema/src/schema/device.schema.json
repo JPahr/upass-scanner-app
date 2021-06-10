@@ -2,12 +2,12 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://upass.com.ua/schema/device",
     "title": "Device schema",
-    "description": "This is a scheme which contains basic data about customer device: os, device name, etc",
+    "description": "This is a scheme that contains basic data about the customer`s device: os, device name, etc",
     "type": "object",
     "properties": {
         "os": {
             "title": "Os",
-            "description": "OS which customer is use",
+            "description": "The Operation system that the customer is using",
             "enum": [
                 "android", 
                 "ios"
@@ -15,24 +15,24 @@
         },
         "manufacturer": {
             "title": "Company manufacturer",
-            "description": "Describes which company produced customer device",
+            "description": "Describes which company has produced the customer`s device",
             "enum": [
                 "Apple", "Samsung", "Xiaomi"
             ]
         },
         "model": {
             "title": "Model",
-            "description": "Customer device model type",
+            "description": "Customer`s device model type",
             "type": "string"
         },
         "name": {
             "title": "Device name",
-            "description": "Customer device name",
+            "description": "Customer`s device name",
             "type": "string"
         },
         "cards": {
             "title": "Cards",
-            "description": "Customer cards list",
+            "description": "Customer`s available card list",
             "type": "array"
         },
         "deviceId": {
