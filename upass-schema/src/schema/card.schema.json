@@ -34,7 +34,7 @@
         },
         "holder": {
             "title": "Card holder information",
-            "description": "Information about customer`s personal data, customer`s device data etc.",
+            "description": "Information about customer`s personal data, customer`s device data, etc.",
             "type": "object",
             "$ref": "#/card-holder/"
         },
@@ -50,7 +50,7 @@
         },
         "passCampaign": {
             "title": "Pass campaign",
-            "description": "Campaign detail information to which pass has been associated",
+            "description": "Detailed information about the campaign, which associates with card",
             "type": "string"
         },
         "template": {
@@ -59,7 +59,7 @@
         },
         "assets": {
             "title": "Assets list",
-            "description": "List of all assets which our cards uses ",
+            "description": "List of all assets which card uses ",
             "type": "array"
         },
         "barcodeType": {
@@ -69,7 +69,7 @@
         }, 
         "details":{
             "title": "Details",
-            "description": "Information on backside of pass, contains company mail, phone, address etc.",
+            "description": "Information on the backside of the card, contains company mail, phone number, address, etc",
             "type":"array"
         }
     }
