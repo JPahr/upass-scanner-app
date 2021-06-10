@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://upass.com.ua/schema/card-holder.json",
-    "description": "Card holder schema which contains prepared data for card creation",
+    "description": "Card holder schema which contains prepared data for pass creation",
     "type": "object",
     "required": [],
     "properties": {
         "name": {
             "title": "Name",
-            "description": "Customer first and last name which displaying on card",
+            "description": "Customer`s first and last name, which are displayed on pass",
             "type": "string"
         }
     }
