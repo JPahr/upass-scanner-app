@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Upass colors system schema",
+    "description": "Upass colors system schema",
+    "color": {
+        "base": {
+            "orange": {
+                "light" : { "value": "#CCCCCC" },
+                "medium": { "value": "#FF6A14" },
+                "dark"  : { "value": "#FF9C46" }
+            },
+            "black": {
+                "light" : { "value": "#CCCCCC" },
+                "medium": { "value": "#FF6A14" },
+                "dark"  : { "value": "#FF9C46" }
+            },
+            "white": {
+                "light" : { "value": "#CCCCCC" },
+                "medium": { "value": "#E3F2FD" },
+                "dark"  : { "value": "#BBCAD5" }
+            }
+        }
+    }
+}

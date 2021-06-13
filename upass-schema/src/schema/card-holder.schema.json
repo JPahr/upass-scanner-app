@@ -1,59 +1,14 @@
 {
-    "$id": "http://upass.com.ua/main/card-holder.json",
     "$schema": "http://json-schema.org/draft-07/schema",
-    "description": "A representation of a customer with all device data",
+    "$id": "http://upass.com.ua/schema/card-holder.json",
+    "description": "Card holder schema which contains prepared data for card creation",
     "type": "object",
+    "required": [],
     "properties": {
-        "firstName": {
-            "title": "User first name",
-            "description": "Represents user fist name",
+        "name": {
+            "title": "Name",
+            "description": "Customer first and last name which displaying on card",
             "type": "string"
-        },
-        "lastName": {
-            "title": "User last name",
-            "description": "Represents user last name",
-            "type": "string"
-        },
-        "age": {
-            "title": "User age",
-            "description": "Represents user age",
-            "type": "integer"
-        },
-        "birthday":{
-            "title": "User birthday date",
-            "description": "Represents birthday day",
-            "type": "string",
-            "format": "date"
-        },
-        "phone": {
-            "title": "User email",
-            "description": "Represents user phone",
-            "type": "string"
-        },
-        "email": {
-            "title": "User email",
-            "description": "Represents user email",
-            "type": "string"
-        },
-        "device": {
-            "title": "User device",
-            "description": "Represents info about user device",
-            "type": "object",
-            "properties": {
-                "os": {
-                    "title": "User device os",
-                    "description": "Represents user device os",
-                    "enum": [
-                        "android", 
-                        "ios"
-                    ]
-                },
-                "deviceToken": {
-                    "title": "User device token",
-                    "description": "Represents user device token",
-                    "type": "string"
-                }
-            }
         }
     }
 }
