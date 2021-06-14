@@ -2,47 +2,47 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://upass.com.ua/schema/customer",
     "title": "Customer schema",
-    "description": "This is a schema which contains information about customer: first name, phone, birthday, device data",
+    "description": "This is a schema that contains information about the customer: first name, phone, birth date, device data",
     "properties": {
         "_id": {
             "title": "Id",
-            "description": "Customer",
+            "description": "Customer`s identifier",
             "type": "string"
         },
         "firstName": {
             "title": "First name",
-            "description": "Customer first name",
+            "description": "Customer`s first name",
             "type": "string"
         },
         "lastName": {
             "title": "Last name",
-            "description": "Customer last name",
+            "description": "Customer`s last name",
             "type": "string"
         },
         "age": {
             "title": "Age",
-            "description": "Customer age, calculates by system, based on birthday date",
+            "description": "Customer`s age, which calculates by the system, based on birthday date",
             "type": "integer"
         },
         "birthday":{
             "title": "Birthday",
-            "description": "Customer birthday date",
+            "description": "Customer`s birthday date",
             "type": "string",
             "format": "date"
         },
         "phone": {
             "title": "Phone",
-            "description": "Customer phone number with which user restores his pin",
+            "description": "Customer`s phone number which he uses to restore his pin",
             "type": "string"
         },
         "email": {
             "title": "Email",
-            "description": "Customer email, used for email notifications and special offers",
+            "description": "Customer`s email, which uses for email notifications and special offers",
             "type": "string"
         },
         "devices": {
             "title": "Devices",
-            "description": "Contains information about all customer device's",
+            "description": "Contains information about all customer devices",
             "type": "array"
         }
     }

@@ -2,17 +2,17 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://upass.com.ua/schema/card",
     "title": "Card schema",
-    "description": "A detailed data schema which contains information for card creating, customer data, customer device data",
+    "description": "Detailed data schema which contains information for card creation, customer`s data, customer`s device data",
     "type": "object",
     "properties": {
         "id": {
             "title": "Card identifier",
-            "description": "A unique identifier for upass system",
+            "description": "Unique identifier in Upass system",
             "type": "string"
         },
         "os": {
             "title": "os",
-            "description": "Customer device os",
+            "description": "Customer`s device operation system",
             "enum": ["android", "ios"]
         },
         "createdAt": {
@@ -29,12 +29,12 @@
         },
         "logoAlt": {
             "title": "Logo alt",
-            "description": "Card logo image html alt",
+            "description": "Card`s logo image alternative text",
             "type": "string"
         },
         "holder": {
             "title": "Card holder information",
-            "description": "Information about user personal data, user device data and etc.",
+            "description": "Information about customer`s personal data, customer`s device data, etc.",
             "type": "object",
             "$ref": "#/card-holder/"
         },
@@ -50,7 +50,7 @@
         },
         "passCampaign": {
             "title": "Pass campaign",
-            "description": "Campaign detail information to which pass has been associated",
+            "description": "Detailed information about the campaign, which associates with card",
             "type": "string"
         },
         "template": {
@@ -59,7 +59,7 @@
         },
         "assets": {
             "title": "Assets list",
-            "description": "List of all assets which our cards uses ",
+            "description": "List of all assets which card uses ",
             "type": "array"
         },
         "barcodeType": {
@@ -69,7 +69,7 @@
         }, 
         "details":{
             "title": "Details",
-            "description": "Information on backside of pass, contains company mail, phone, address etc.",
+            "description": "Information on the backside of the card, contains company mail, phone number, address, etc",
             "type":"array"
         }
     }

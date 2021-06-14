@@ -7,7 +7,7 @@
     "properties": {
         "name": {
             "title": "Name",
-            "description": "Customer first and last name which displaying on card",
+            "description": "Customer`s first and last name, which are displayed on card",
             "type": "string"
         }
     }
