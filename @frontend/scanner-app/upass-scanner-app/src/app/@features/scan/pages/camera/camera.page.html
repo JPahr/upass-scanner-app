@@ -5,7 +5,7 @@
         <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title text-center>
       QR скан
     </ion-title>
   </ion-toolbar>
@@ -13,11 +13,16 @@
 
 <ion-content
   [fullscreen]="true"
-  [style.--background]="scanActive?'#00000000':'#ffffff'"
->
-  <ion-button expand="full" (click)="startScanner()" [hidden]="scanActive">
-    Сканувати
-  </ion-button>
+  [style.--background]="scanActive?'#00000000':'#ffffff'">
+  
+  <ion-text>
+    <h1 style="text-align: center;">
+      Відскануйте карту лояльності
+    </h1>
+  </ion-text>
+
+  <img src="../../../../../assets/img/qr_code.png" />
+
   <ion-row class="scan-button" [hidden]="!scanActive">
     <ion-col class="ion-no-padding">
       <ion-button expand="full" (click)="stopScanner()">Stop</ion-button>
@@ -25,3 +30,10 @@
   </ion-row>
   <div class="scan-box" [hidden]="!scanActive"></div>
 </ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-button expand="full" (click)="startScanner()" [hidden]="scanActive">
+      Сканувати
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

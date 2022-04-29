@@ -8,27 +8,27 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../@features/scan/pages/manual/tab1.module').then(m => m.Tab1PageModule)
+        path: 'manual',
+        loadChildren: () => import('../../@features/scan/pages/manual/tab1.module').then(m => m.Tab1PageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../@features/scan/pages/camera/camera.module').then(m => m.CameraPageModule)
+        path: 'scan',
+        loadChildren: () => import('../../@features/scan/pages/camera/camera.module').then(m => m.CameraPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../@features/profile/pages/tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'profile',
+        loadChildren: () => import('../../@features/profile/pages/profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/scan',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/scan',
     pathMatch: 'full'
   }
 ];

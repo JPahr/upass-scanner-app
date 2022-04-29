@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CameraPage } from './camera.page';
-import { ExploreContainerComponentModule } from '../../../../explore-container/explore-container.module';
+import { ExploreContainerComponentModule } from '../../../../@components/explore-container/explore-container.module';
 
 import { CameraRoutingModule } from './camera-routing.module';
 
