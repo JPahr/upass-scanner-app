@@ -1,0 +1,7 @@
+{
+  "name": "uPass Scanner App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
