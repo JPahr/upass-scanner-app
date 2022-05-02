@@ -1,8 +1,8 @@
 {
-  "name": "u-pass-scanner-app",
+  "name": "upass-scanner-app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Ivan Parkhomenko",
+  "homepage": "upass.com.ua",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
